@@ -10,6 +10,18 @@ Also see the examples below to see how style markers are encoded.
 
 Details of the training process are described in the paper <a href="https://arxiv.org/abs/2008.02777">On the Accuracy of CRNNs for Line-Based OCR: A Multi-Parameter Evaluation</a>.
 
+# Ground Truth
+
+The ground truth that was used to train these models can be found under
+
+https://www.dropbox.com/sh/mgsopnami242i8u/AAByAKVmdMACiQK72jhLLQ2Ka?dl=0
+
+The data above contains page images, region and segmentation information (produced using <a href="https://github.com/poke1024/origami">Origami</a>) and finally an `annotations.db` with transcriptions (also for use with Origami).
+
+To generate pairs of line image and texts you need to use Origami's export command (you can specify custom line height for export and binarization methods used). Alternatively you can use the following example export:
+
+https://www.dropbox.com/s/0tvsgkh1a12xpxl/annotations-v19-h56.zip?dl=0
+
 # Model Files
 
 The Calamari model files are too large for this repository. They can be downloaded under
